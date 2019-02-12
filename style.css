@@ -1,0 +1,27 @@
+h1 {
+    color: orange;
+    background-color: darkgray;
+}
+.fancy_heading {
+    color: darkorchid;
+    background-color: azure;
+}
+
+.large_text {
+    font-size: 1.5em;
+}
+
+.block_class {
+    margin-top: 200px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
