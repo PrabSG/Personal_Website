@@ -1,51 +1,77 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Page!</title>
 
-       <link rel="stylesheet"
-       href="style.css">
+    <style>
+        body {
+            background-color: rgb(54, 54, 54);
+            color: white;
+            font-family: Helvetica, Arial, sans-serif;
+            padding: 0px;
+            margin:0px;
+        }
 
-    </head>
+        header {
+            background: black;
+            padding: 20px 40px;
+        }
 
-    <body>
-        <h1>Hello World!</h1>
-        <h2 style="color:#ff0000">Title 2</h2>
-        <h6 style="color: rgb(20, 180, 230)">Title 6</h6>
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
 
-        <div class="block_class">Hello I am a block.</div>
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
 
-        <p style="background-color: lightgrey">
-            Hello my <i>name </i><br>
-            <del>is</del> <b>Prab</b>.
-        </p>
+        section {
+            background: white;
+            color: grey;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+        }
 
-        <ul>
-            <li class="fancy_heading large_text">item 1</li>
-            <li>item 2</li>
-        </ul>
+        div {
+            background: red;
+            margin: auto;
+            width: 100px;
+            height: 40px;
+        }
 
-        <ol>
-            <li>item 1</li>
-            <li>item 2</li>    
-        </ol>
+        footer {
+            background: black;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
 
-        <a href="about.html">About me</a>
-
-        <a href="https://www.bbc.co.uk">
-            <button>Hello</button>
-        </a>
-
-        <a href="https://www.google.co.uk">
-        <div class="box"></div>
-        </a>
-
-
-
-        
-    </body>
-
-
-
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="old_about.html">About</a></li>
+                <li>Contact Me</li>
+            </ul>
+        </nav>
+        <h1>Home</h1>
+    </header>
+    <section>
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+    </section>
+    <section>lower-section</section>
+    <footer>footer</footer>
+</body>
 
 </html>
