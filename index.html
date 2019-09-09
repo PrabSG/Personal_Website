@@ -1,51 +1,128 @@
-<!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-       <link rel="stylesheet"
-       href="style.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    </head>
+    <title>Materialize CSS</title>
 
-    <body>
-        <h1>Hello World!</h1>
-        <h2 style="color:#ff0000">Title 2</h2>
-        <h6 style="color: rgb(20, 180, 230)">Title 6</h6>
-
-        <div class="block_class">Hello I am a block.</div>
-
-        <p style="background-color: lightgrey">
-            Hello my <i>name </i><br>
-            <del>is</del> <b>Prab</b>.
-        </p>
-
-        <ul>
-            <li class="fancy_heading large_text">item 1</li>
-            <li>item 2</li>
-        </ul>
-
-        <ol>
-            <li>item 1</li>
-            <li>item 2</li>    
-        </ol>
-
-        <a href="about.html">About me</a>
-
-        <a href="https://www.bbc.co.uk">
-            <button>Hello</button>
-        </a>
-
-        <a href="https://www.google.co.uk">
-        <div class="box"></div>
-        </a>
-
-
-
+    <style>
+        h5 {
+            padding: 2px;
+        }
         
-    </body>
+        .box {
+            height: 200px;
+        }
+    </style>
+</head>
 
+<body>
 
+    <div class="container">
+        <h1>Hello World!</h1>
+        <h2>h2 title</h2>
+        <h3>h3 title</h3>
+        <h4>h4 title</h4>
+        <h5>h5 title</h5>
+        <h6>h6 title</h6>
+        <p>This is a paragraph</p>
+        <p class="flow-text">This is flow text</p>
+    </div>
 
+    <div class="container">
+        <h4 class="hide">Always hide me</h4>
+        <h4 class="hide-on-small-only">Hide me on small screens</h4>
+        <h4 class="hide-on-med-only">Hide me on medium screens</h4>
+        <h4 class="hide-on-large-only">Hide me on large screens</h4>
+        <h4 class="hide-on-med-and-down">Hide on med and below</h4>
+        <h4 class="hide-on-med-and-up">Hide on med and up</h4>
+    </div>
+
+    <div class="container">
+        <h5 class="blue">Let me not to the marriage of true minds </h5>
+        <h5 class="blue darken-2">Admit impediments. Love is not love </h5>
+        <h5 class="orange lighten-4">Which alters when it alteration finds, </h5>
+        <h5 class="purple darken-2 white-text">Or bends with the remover to remove. </h5>
+        <h5 class="teal darken-2 yellow-text text-lighten-3">O no! it is an ever-fixed mark </h5>
+        <h5 class="yellow lighten-3 purple-text text-darken-2">That looks on tempests and is never shaken; </h5>
+        <h5>It is the star to every wand'ring bark, </h5>
+        <h5>Whose worth's unknown, although his height be taken. </h5>
+        <h5>Love's not Time's fool, though rosy lips and cheeks </h5>
+        <h5>Within his bending sickle's compass come; </h5>
+        <h5>Love alters not with his brief hours and weeks, </h5>
+        <h5>But bears it out even to the edge of doom. </h5>
+        <h5>If this be error and upon me prov'd, </h5>
+        <h5>I never writ, nor no man ever lov'd.</h5>
+    </div>
+
+    <div class="container">
+        <h5 class="center-align">Centre alignment</h5>
+        <h5 class="left-align">Left alignment</h5>
+        <h5 class="right-align">Right alignment</h5>
+    </div>
+
+    <div class="container grey lighten-2 box valign-wrapper">
+        <h5>Vertical alignment</h5>
+    </div>
+
+    <div class="container">
+        <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim. In massa tempor nec feugiat.
+        </p>
+    </div>
+
+    <div class="container">
+        <h4>Buttons</h4>
+        <a href="#" class="btn waves-effect waves-dark">Normal Button</a>
+        <a href="#" class="btn-small">Small Button</a>
+        <a href="#" class="btn-large">Large Buttons</a>
+        <a href="#" class="btn indigo waves-effect waves-light">Indigo Button</a>
+        <a href="#" class="btn disabled">Disabled Button</a>
+
+        <h4>Floating Button</h4>
+        <a href="#" class="btn-floating pink pulse"></a>
+
+        <h4>Other Elements</h4>
+        <div class="btn">I am a div tag</div>
+    </div>
+
+    <div class="container">
+        <h4>Icons</h4>
+        <i class="material-icons red-text">error</i>
+        <i class="material-icons yellow-text text-darken-2">warning</i>
+        <i class="material-icons grey-text">cloud</i>
+        <i class="material-icons blue-text">folder</i>
+
+        <h4>Icons on Buttons</h4>
+        <a href="#" class="btn indigo">
+            <span>Send</span>
+            <i class="material-icons right">send</i>
+        </a>
+        <a href="#" class="btn pink waves-effect waves-light">
+            <span>Email</span>
+            <i class="material-icons left">email</i>
+        </a>
+
+        <h4>Icons on Floating Buttons</h4>
+        <a href="" class="btn-floating blue pulse">
+            <i class="material-icons">add</i>
+        </a>
+        <a href="" class="btn-floating red pulse">
+            <i class="material-icons">remove</i>
+        </a>
+        <a href="" class="btn-floating orange pulse">
+            <i class="material-icons">edit</i>
+        </a>
+    </div>
+
+</body>
 
 </html>
