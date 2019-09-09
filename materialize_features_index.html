@@ -9,12 +9,17 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 
     <title>Materialize CSS</title>
 
     <style>
+        nav .badge {
+            position: relative;
+            top: 20px;
+            right: 20px;
+        }
+        
         h5 {
             padding: 2px;
         }
@@ -22,10 +27,58 @@
         .box {
             height: 200px;
         }
+        
+        .col>div {
+            background: lightblue;
+            height: 120px;
+        }
+        
+        .row>div {
+            padding: 10px;
+            background: #ddd;
+            border: 1px solid white;
+        }
+        
+        .row.non-grey>div {
+            background: none;
+        }
+        
+        .row {
+            margin: 40px auto;
+        }
     </style>
 </head>
 
 <body>
+
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper indigo">
+            <div class="container">
+                <a href="#" class="brand-logo">Site Title</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li>
+                        <a href="" class="btn-floating indigo darken-4 z-depth-0">
+                            <i class="material-icons">notifications</i>
+                        </a>
+                    </li>
+                    <li><span class="badge white-text pink new">5</span></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+
 
     <div class="container">
         <h1>Hello World!</h1>
@@ -123,6 +176,71 @@
         </a>
     </div>
 
+    <div class="container">
+        <h4>Grids</h4>
+        <div class="row">
+            <div class="col s3">Content 1</div>
+            <div class="col s3">Content 2</div>
+            <div class="col s3">Content 3</div>
+            <div class="col s3">Content 4</div>
+        </div>
+        <div class="row">
+            <div class="col s6 m3">Content 1</div>
+            <div class="col s6 m3">Content 2</div>
+            <div class="col s6 m3">Content 3</div>
+            <div class="col s6 m3">Content 4</div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l4">Content 1</div>
+            <div class="col s12 m6 l4">Content 2</div>
+            <div class="col s12 m6 l4">Content 3</div>
+            <div class="col s12 m6 l4">Content 4</div>
+            <div class="col s12 m6 l4">Content 5</div>
+            <div class="col s12 m6 l4">Content 6</div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l4 xl2">Content 1</div>
+            <div class="col s12 m6 l4 xl2">Content 2</div>
+            <div class="col s12 m6 l4 xl2">Content 3</div>
+            <div class="col s12 m6 l4 xl2">Content 4</div>
+            <div class="col s12 m6 l4 xl2">Content 5</div>
+            <div class="col s12 m6 l4 xl2">Content 6</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>Shadows and Depth</h4>
+        <div class="row non-grey">
+            <div class="col s2">
+                <div class=""></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-1"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-2"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-3"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-4"></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-5"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        });
+    </script>
 </body>
 
 </html>
