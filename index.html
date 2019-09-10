@@ -6,41 +6,258 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <!--Import Google Icon Font-->
+    <!-- Import Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
     <title>Photo Ninja</title>
 </head>
 
 <body>
 
-    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
-        href="https://unsplash.com/@sbk202?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Sam Balye"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span>
-        <span
-            style="display:inline-block;padding:2px 3px">Sam Balye</span>
-    </a>
-
     <!-- navbar -->
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper grey darken-3">
+                <div class="container" Homebar>
+                    <a href="" class="brand-logo white-text">Prabhjot Grewal</a>
+                    <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons white-text">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#about" class="grey-text">About</a></li>
+                        <li><a href="#projects" class="grey-text">Projects</a></li>
+                        <li><a href="#experience" class="grey-text">Experience</a></li>
+                        <li><a href="#contact" class="grey-text">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <ul class="sidenav grey darken-2" id="mobile-menu">
+            <li>
+                <a class="white-text" href="#about">
+                    <i class="material-icons white-text">chevron_right</i> About
+                </a>
+            </li>
+            <li>
+                <a class="white-text" href="#projects">
+                    <i class="material-icons white-text">chevron_right</i> Projects</a>
+            </li>
+            <li>
+                <a class="white-text" href="#experience">
+                    <i class="material-icons white-text">chevron_right</i> Experience</a>
+            </li>
+            <li>
+                <a class="white-text" href="#contact">
+                    <i class="material-icons white-text">chevron_right</i> Contact Me</a>
+            </li>
+        </ul>
+
+    </header>
 
     <!-- photo / grid -->
 
     <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="images/bg-pattern.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
 
-    <!-- services / tabs -->
+    <!-- About Me -->
+    <section id="about" class="section container scrollspy">
+        <h2>Hi, I'm Prab!</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, saepe harum libero, aut expedita magnam inventore accusantium iusto fuga, cum eveniet distinctio veniam nostrum animi architecto consequatur quo debitis delectus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, saepe harum libero, aut expedita magnam inventore accusantium iusto fuga, cum eveniet distinctio veniam nostrum animi architecto consequatur quo debitis delectus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, saepe harum libero, aut expedita magnam inventore accusantium iusto fuga, cum eveniet distinctio veniam nostrum animi architecto consequatur quo debitis delectus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, saepe harum libero, aut expedita magnam inventore accusantium iusto fuga, cum eveniet distinctio veniam nostrum animi architecto consequatur quo debitis delectus.</p>
+    </section>
 
     <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="images/bg-pattern.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
 
-    <!-- contact form -->
+    <!-- Projects -->
+    <section id="projects" class="section container scrollspy">
+        <h2>Projects</h2>
+        <p>Lorem, ipsSum dolor sit amet consectetur adipisicing elit. Ipsa, saepe harum libero, aut expedita magnam inventore accusantium iusto fuga, cum eveniet distinctio veniam nostrum animi architecto consequatur quo debitis delectus.</p>
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="card sticky-action">
+                    <div class="card-image"><img src="images/bg-nebula.jpg">
+                        <span class="btn-floating halfway-fab btn-large waves-effect waves-light orange activator">
+                                <i class="material-icons">add</i>
+                            </span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">This is a title</span>
+                        <p>This is more test text underneath</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, aperiam? Perspiciatis, maiores. Aspernatur quos animi, itaque ipsam eaque pariatur quo hic ad veritatis placeat soluta, tenetur, optio dolore sit illo.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">CLICK Link pls</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title
+                                <i class="material-icons right">close</i>
+                            </span>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates cum ipsa provident eligendi?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card sticky-action">
+                    <div class="card-image"><img src="images/bg-nebula.jpg">
+                        <span class="btn-floating halfway-fab btn-large waves-effect waves-light orange activator">
+                                <i class="material-icons">add</i>
+                            </span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">This is a title</span>
+                        <p>This is more test text underneath</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, aperiam? Perspiciatis, maiores. Aspernatur quos animi, itaque ipsam eaque pariatur quo hic ad veritatis placeat soluta, tenetur, optio dolore sit illo.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">CLICK Link pls</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title
+                                <i class="material-icons right">close</i>
+                            </span>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates cum ipsa provident eligendi?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card sticky-action">
+                    <div class="card-image"><img src="images/bg-nebula.jpg">
+                        <span class="btn-floating halfway-fab btn-large waves-effect waves-light orange activator">
+                                <i class="material-icons">add</i>
+                            </span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">This is a title</span>
+                        <p>This is more test text underneath</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, aperiam? Perspiciatis, maiores. Aspernatur quos animi, itaque ipsam eaque pariatur quo hic ad veritatis placeat soluta, tenetur, optio dolore sit illo.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">CLICK Link pls</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title
+                                <i class="material-icons right">close</i>
+                            </span>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates cum ipsa provident eligendi?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card sticky-action">
+                    <div class="card-image"><img src="images/bg-nebula.jpg">
+                        <span class="btn-floating halfway-fab btn-large waves-effect waves-light orange activator">
+                                <i class="material-icons">add</i>
+                            </span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">This is a title</span>
+                        <p>This is more test text underneath</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, aperiam? Perspiciatis, maiores. Aspernatur quos animi, itaque ipsam eaque pariatur quo hic ad veritatis placeat soluta, tenetur, optio dolore sit illo.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">CLICK Link pls</a>
+                        <a href="#">Or Here?</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title
+                                <i class="material-icons right">close</i>
+                            </span>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates cum ipsa provident eligendi?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="images/bg-pattern.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <section id="experience" class="section container scrollspy">
+        <h2>Experience</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vel aut tempore voluptatem temporibus voluptates, quaerat neque a? Dolorum impedit est reiciendis.</p>
+
+    </section>
 
     <!-- footer -->
+    <footer id="contact" class="section scrollspy page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>Contact Me</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic blanditiis sunt ipsa, error est sed et expedita reprehenderit omnis sapiente. Quidem est quae nam iste. Tempora rerum impedit expedita facilis.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Links</h5>
+                    <ul>
+                        <li>
+                            <a href="#" class="white-text">Email</a>
+                        </li>
+                        <li>
+                            <a href="#" class="white-text">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="#" class="white-text">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright black">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6">
+                        <span>&copy; 2019 Prabhjot Singh Grewal</span>
+                    </div>
+                    <div class="col s12 l4 offset-l2">
+                        <div id="page-design-info">
+                            <span>Made with </span>
+                            <span><a href="https://materializecss.com/">Materialize </a></span>
+                            <span>and </span>
+                            <span><a href="https://fontawesome.com/">Font Awesome.</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {
-
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.scrollspy').scrollSpy({
+                scrollOffset: 400,
+                throttle: 500
+            });
         });
     </script>
 </body>

@@ -1,0 +1,22 @@
+/* header {
+    background-color: red;
+    min-height: 1000px;
+}
+
+@media screen and (max-width: 670px) {
+    header {
+        min-height: 500px;
+    }
+} */
+
+
+/* #mobile-menu {
+    font-size: 300%
+} */
+
+
+/* .parallax {
+    filter: blur(8px);
+    -webkit-filter: blur(4px);
+    transform: scale(1.1);
+} */
