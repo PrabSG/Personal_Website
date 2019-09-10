@@ -1,3 +1,13 @@
 .parallax-container {
-    height: 40vw;
+    height: 20vw;
 }
+
+h2 {
+    margin-top: 15;
+    margin-bottom: 15;
+}
+
+
+/* section {
+    padding-top: 20px;
+} */

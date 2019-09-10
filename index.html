@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <title>Photo Ninja</title>
+    <title>Prabhjot Grewal</title>
 </head>
 
 <body>
@@ -27,10 +27,10 @@
                         <i class="material-icons white-text">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="#about" class="grey-text">About</a></li>
-                        <li><a href="#projects" class="grey-text">Projects</a></li>
-                        <li><a href="#experience" class="grey-text">Experience</a></li>
-                        <li><a href="#contact" class="grey-text">Contact Me</a></li>
+                        <li><a href="#about" class="grey-text scroll-btn">About</a></li>
+                        <li><a href="#projects" class="grey-text scroll-btn">Projects</a></li>
+                        <li><a href="#experience" class="grey-text scroll-btn">Experience</a></li>
+                        <li><a href="#contact" class="grey-text scroll-btn">Contact Me</a></li>
                     </ul>
                 </div>
             </nav>
@@ -61,7 +61,7 @@
     <!-- photo / grid -->
 
     <!-- parallax -->
-    <div class="parallax-container">
+    <div id="parallax-header" class="parallax-container" style="height: 18vw">
         <div class="parallax">
             <img src="images/bg-pattern.jpg" alt="" class="responsive-img">
         </div>
@@ -252,12 +252,17 @@
                         <span>&copy; 2019 Prabhjot Singh Grewal</span>
                     </div>
                     <div class="col s12 l4 offset-l2">
-                        <div id="page-design-info">
-                            <span>Made with </span>
-                            <span><a href="https://materializecss.com/">Materialize </a></span>
-                            <span>and </span>
-                            <span><a href="https://fontawesome.com/">Font Awesome.</a></span>
-                        </div>
+                        <span>Made with </span>
+                        <span><a href="https://materializecss.com/">Materialize </a></span>
+                        <span>and </span>
+                        <span><a href="https://fontawesome.com/">Font Awesome.</a></span>
+                        <p>
+                            <span>Background Photo by </span>
+                            <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+                                href="https://unsplash.com/@anniespratt?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="More photos from Annie Spratt on Unsplash"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span>
+                                <span style="display:inline-block;padding:2px 3px">Annie Spratt</span>
+                            </a>
+                        </p>
                     </div>
                 </div>
 
@@ -273,9 +278,18 @@
             $('.sidenav').sidenav();
             $('.parallax').parallax();
             $('.materialboxed').materialbox();
-            $('.scrollspy').scrollSpy({
-                scrollOffset: 400,
-                throttle: 500
+            // $('.scrollspy').scrollSpy({
+            //     scrollOffset: $(window).height() / 2,
+            //     throttle: 500
+            // });
+            jQuery('.scroll-btn').click(function(e) {
+                var jump = $(this).attr('href');
+                var spacing_offset = 50;
+                var new_position = $(jump).offset();
+                $('html, body').stop().animate({
+                    scrollTop: new_position.top - spacing_offset
+                }, 1000);
+                e.preventDefault();
             });
         });
     </script>
