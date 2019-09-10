@@ -2,12 +2,22 @@
     height: 20vw;
 }
 
+a {
+    outline: none;
+}
+
 h2 {
     margin-top: 15;
     margin-bottom: 15;
 }
 
+#btn-links .col {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
-/* section {
-    padding-top: 20px;
-} */
+#btn-links .col .btn-large {
+    width: 90%;
+    min-width: 170px;
+    max-width: 220px;
+}

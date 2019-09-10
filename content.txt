@@ -1,0 +1,7 @@
+About
+Hi, I'm Prab!
+I'm an aspiring software engineer and a second year BEng Computing student at Imperial College London.
+I have a strong interest into Machine Learning and Distributed Systems, with a focus on back-end development. My main languages are Java and Python. As part of studies and interest, I have also experimented with C, Haskell and Kotlin.
+This personal website outlines some of my past and on-going projects and experiences over the last few years. My CV is linked below, but you can find more details on my work lower down.
+Feel free to get in touch with me via Email, or send me a message on LinkedIn!
+Here are some helpful links:
