@@ -21,3 +21,7 @@ h2 {
     min-width: 170px;
     max-width: 220px;
 }
+
+.card-content ul li {
+    list-style-type: disc;
+}

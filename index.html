@@ -110,100 +110,97 @@
             <h2>Projects</h2>
             <p>Lorem, ipsSum dolor sit amet consectetur adipisicing elit. Ipsa, saepe harum libero, aut expedita magnam inventore accusantium iusto fuga, cum eveniet distinctio veniam nostrum animi architecto consequatur quo debitis delectus.</p>
             <div class="row">
-                <div class="col s12 l6">
-                    <div class="card sticky-action">
+                <div class="col s12">
+                    <div class="card horizontal">
                         <div class="card-image"><img src="images/bg-nebula.jpg">
-                            <span class="btn-floating halfway-fab btn-large waves-effect waves-light orange darken-2 activator">
-                                <i class="material-icons">add</i>
-                            </span>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title">This is a title</span>
-                            <p>This is more test text underneath</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, aperiam? Perspiciatis, maiores. Aspernatur quos animi, itaque ipsam eaque pariatur quo hic ad veritatis placeat soluta, tenetur, optio dolore sit illo.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">CLICK Link pls</a>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <div class="row">
+                                    <div class="col s8">
+                                        <span class="card-title">ARM Group Project</span>
+                                    </div>
+                                    <div class="col s4 right-align">
+                                        <span class="btn-floating activator btn-large waves-effect orange darken-2"><i
+                                                class="material-icons">add</i></span>
+                                    </div>
+                                </div>
+
+                                <ul>
+                                    <li>An implementation of an emulator and assembler for the ARMv6 instruction set written in C, running on a Raspberry Pi.</li>
+                                    <li>Additionally had an extension of Connect Four, displaying the game on a hand-made LED-matrix controller by the GPIO pins.</li>
+                                    <li>Furthermore, I implemented a Monte Carlo Tree Search algorithm for the "Computer's" decision logic in the game.</li>
+                                </ul>
+                                <p>Unfortunately, by request of the university for plaigarism purposes, the repository cannot be public. If you are interested in viewing the repository, please don't hesitate to contact me!</p>
+                            </div>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title
-                                <i class="material-icons right">close</i>
-                            </span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates cum ipsa provident eligendi?
+                            <span class="card-title">ARM Group Project<i class="material-icons right">close</i></span>
+                            <p>
+                                Given a Raspberry-Pi which was based off of the same ARM architecture, we were first tasked as a group of 4 to create an emulator that could execute the instructions given in the format of a binary file which covered the whole range of processing, data-transferring,
+                                and branching instructions. The program utilised a multi-stage pipeline operating on an anonymous union of structs (representing the current instruction). Thus the instructions had to be initially parsed, and then executed
+                                according to flags and register shifts.
+                            </p>
+                            <p>
+                                The assembler used a similar format to represent each instruction and operated using a multi-pass method as to be able to calculate memory locations. The hardest task was being able to parse the given strings of assembly instructions and tokenise them,
+                                in order to parse them correctly to the correct binary representation (making sure to also set the correct flags and register calculations).
+                            </p>
+                            <p>
+                                For the extension we quickly created a simple game of Connect-Four. We then added in functionality to display the game on a custom PCB and hand-made LED-matrix. I also decided to implement a "Computer" to play against, and decided to use the Monte Carlo
+                                Search Tree algorithm in order to traverse the current decision space for each move the computer made. Once implemented, even at just 10,000 iterations, it remained unbeatable.
+                            </p>
+                            <p>
+                                All of the tasks ran on the Raspberry-Pi and so we made sure to optimise for speed and heavily reduce memory usage. With manual data-allocation and freeing, we were able to reduce our memory usage significantly, as well as by making use of data structures
+                                such as anonymised unions rather than having several unused struct members.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 l6">
-                    <div class="card sticky-action">
+                <div class="col s12">
+                    <div class="card horizontal">
                         <div class="card-image"><img src="images/bg-nebula.jpg">
-                            <span class="btn-floating halfway-fab btn-large waves-effect waves-light orange darken-2 activator">
-                                <i class="material-icons">add</i>
-                            </span>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title">This is a title</span>
-                            <p>This is more test text underneath</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, aperiam? Perspiciatis, maiores. Aspernatur quos animi, itaque ipsam eaque pariatur quo hic ad veritatis placeat soluta, tenetur, optio dolore sit illo.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">CLICK Link pls</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title
-                                <i class="material-icons right">close</i>
-                            </span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates cum ipsa provident eligendi?
-                            </p>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <span class="card-title">ARM Group Project</span>
+                                <p>An implementation of an emulator and assembler for the ARMv6 instruction set written in C.</p>
+                                <p>Also included an extension of Connect Four displayed on an LED-matrix with a Monte Carlo Tree Search algorithm for the "Computer's" move.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">CLICK Link pls</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 l6">
-                    <div class="card sticky-action">
+                <div class="col s12">
+                    <div class="card horizontal">
                         <div class="card-image"><img src="images/bg-nebula.jpg">
-                            <span class="btn-floating halfway-fab btn-large waves-effect waves-light orange darken-2 activator">
-                                <i class="material-icons">add</i>
-                            </span>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title">This is a title</span>
-                            <p>This is more test text underneath</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, aperiam? Perspiciatis, maiores. Aspernatur quos animi, itaque ipsam eaque pariatur quo hic ad veritatis placeat soluta, tenetur, optio dolore sit illo.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">CLICK Link pls</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title
-                                <i class="material-icons right">close</i>
-                            </span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates cum ipsa provident eligendi?
-                            </p>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <span class="card-title">ARM Group Project</span>
+                                <p>An implementation of an emulator and assembler for the ARMv6 instruction set written in C.</p>
+                                <p>Also included an extension of Connect Four displayed on an LED-matrix with a Monte Carlo Tree Search algorithm for the "Computer's" move.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">CLICK Link pls</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 l6">
-                    <div class="card sticky-action">
+                <div class="col s12">
+                    <div class="card horizontal">
                         <div class="card-image"><img src="images/bg-nebula.jpg">
-                            <span class="btn-floating halfway-fab btn-large waves-effect waves-light orange darken-2 activator">
-                                <i class="material-icons">add</i>
-                            </span>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title">This is a title</span>
-                            <p>This is more test text underneath</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, aperiam? Perspiciatis, maiores. Aspernatur quos animi, itaque ipsam eaque pariatur quo hic ad veritatis placeat soluta, tenetur, optio dolore sit illo.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">CLICK Link pls</a>
-                            <a href="#">Or Here?</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title
-                                <i class="material-icons right">close</i>
-                            </span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates cum ipsa provident eligendi?
-                            </p>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <span class="card-title">ARM Group Project</span>
+                                <p>An implementation of an emulator and assembler for the ARMv6 instruction set written in C.</p>
+                                <p>Also included an extension of Connect Four displayed on an LED-matrix with a Monte Carlo Tree Search algorithm for the "Computer's" move.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">CLICK Link pls</a>
+                            </div>
                         </div>
                     </div>
                 </div>
