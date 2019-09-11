@@ -11,6 +11,7 @@ ARM Group Project
 An implementation of an emulator and assembler for the ARMv6 instruction set written in C, running on a Raspberry Pi.
 Additionally had an extension of Connect Four, displaying the game on a hand-made LED-matrix controller by the GPIO pins.
 Furthermore, I implemented a Monte Carlo Tree Search algorithm for the "Computer's" decision logic in the game.
+Unfortunately, by request of the university for plaigarism purposes, the repository cannot be public. If you are interested in viewing the repository, please don't hesitate to contact me!
 --Reveal--
 Given a Raspberry-Pi which was based off of the same ARM architecture, we were first tasked as a group of 4 to create an emulator that could execute the instructions given in the format of a binary file which covered the whole range of processing, data-transferring, and branching instructions. The program utilised a multi-stage pipeline operating on an anonymous union of structs (representing the current instruction). Thus the instructions had to be initially parsed, and then executed according to flags and register shifts.
 The assembler used a similar format to represent each instruction and operated using a multi-pass method as to be able to calculate memory locations. The hardest task was being able to parse the given strings of assembly instructions and tokenise them, in order to parse them correctly to the correct binary representation (making sure to also set the correct flags and register calculations).
@@ -18,4 +19,12 @@ For the extension we quickly created a simple game of Connect-Four. We then adde
 All of the tasks ran on the Raspberry-Pi and so we made sure to optimise for speed and heavily reduce memory usage. With manual data-allocation and freeing, we were able to reduce our memory usage significantly, as well as by making use of data structures such as anonymised unions rather than having several unused struct members.
 
 eduCATe - IC Hack 19
-
+Designed a scheduling application with built-in messaging and file-sharing abilities, targeted at the workplace and education institutes.
+The front-end was an Android application built in Android Studio using Java.
+Talked to a LAMP-stack webserver that stored and handled messages and users, passing data using JSON files.
+--Reveal--
+Inspired by the confusing number of tasks and assignments we were face during our time at school and university, decided to create an aid to help schedule time to complete those tasks, keep reminders on upcoming assessments, as well as serve as a platform to discuss those assignments.
+Messaging would work in threads, similar to the structure built into Slack, and would allow messages to contain text content or for a file to be uploaded and sent. Each assignment and/or module would contain its own channel for sake of organising chats and streamlining the process of effectively spreading and receiving information relating to a certain assignment. This would be more effective than questions being lost in random conversation of large, generic group chats.
+I was familiar with Android Studio, and so built the user-facing UI and also handled the parsing of data from JSON to usable data, that would be sent to and recieved from the server.
+The server was able to store users and link them to certain channels, threads and messages. It also handled creation and authentication of users.
+Unfortunately, despite both front and back-end having working data-parsing functionality, the app was unable to connect to the endpoint given the methods we had tried in the time constraints.

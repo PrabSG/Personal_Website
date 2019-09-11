@@ -78,19 +78,19 @@
             <p>Here are some helpful links:</p>
             <div id="btn-links" class="row">
                 <div class="col s12 m6 l3 center-align">
-                    <a class="waves-effect waves-light btn-large orange darken-2"><i
+                    <a href="mailto:prab99uk@gmail.com" class="waves-effect waves-light btn-large orange darken-2"><i
                             class="material-icons right">email</i>Email</a>
                 </div>
                 <div class="col s12 m6 l3 center-align">
-                    <a class="waves-effect waves-light btn-large orange darken-2"><i
+                    <a href="docs/cv.pdf" class="waves-effect waves-light btn-large orange darken-2"><i
                             class="fas fa-file-alt right"></i>CV</a>
                 </div>
                 <div class="col s12 m6 l3 center-align">
-                    <a class="waves-effect waves-light btn-large orange darken-2"><i
+                    <a href="https://github.com/PrabSG" class="waves-effect waves-light btn-large orange darken-2"><i
                             class="fab fa-github right"></i>GitHub</a>
                 </div>
                 <div class="col s12 m6 l3 center-align">
-                    <a class="waves-effect waves-light btn-large orange darken-2"><i
+                    <a href="https://www.linkedin.com/in/prabhjot-s-grewal/" class="waves-effect waves-light btn-large orange darken-2"><i
                             class="fab fa-linkedin right"></i>LinkedIn</a>
                 </div>
             </div>
@@ -108,7 +108,7 @@
     <div class="z-depth-3">
         <section id="projects" class="section container scrollspy">
             <h2>Projects</h2>
-            <p>Lorem, ipsSum dolor sit amet consectetur adipisicing elit. Ipsa, saepe harum libero, aut expedita magnam inventore accusantium iusto fuga, cum eveniet distinctio veniam nostrum animi architecto consequatur quo debitis delectus.</p>
+            <p>The following are some of the recent projects I have worked on in relative detail, as well as links to other resources:</p>
             <div class="row">
                 <div class="col s12">
                     <div class="card horizontal">
@@ -162,13 +162,47 @@
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
-                                <span class="card-title">ARM Group Project</span>
-                                <p>An implementation of an emulator and assembler for the ARMv6 instruction set written in C.</p>
-                                <p>Also included an extension of Connect Four displayed on an LED-matrix with a Monte Carlo Tree Search algorithm for the "Computer's" move.</p>
+                                <div class="row">
+                                    <div class="col s8">
+                                        <span class="card-title">eduCATe - IC Hack 19</span>
+                                    </div>
+                                    <div class="col s4 right-align">
+                                        <span class="btn-floating activator btn-large waves-effect orange darken-2"><i
+                                                class="material-icons">add</i></span>
+                                    </div>
+                                </div>
+
+                                <ul>
+                                    <li>Designed a scheduling application with built-in messaging and file-sharing abilities, targeted at the workplace and education institutes.</li>
+                                    <li>The front-end was an Android application built in Android Studio using Java.
+                                    </li>
+                                    <li>Talked to a LAMP-stack webserver that stored and handled messages and users, passing data using JSON files.</li>
+                                </ul>
                             </div>
                             <div class="card-action">
-                                <a href="#">CLICK Link pls</a>
+                                <a href="https://github.com/lin-e/ICHack19">Github repository &ensp;<i class="fab fa-github"></i></a>
                             </div>
+                        </div>
+
+                        <div class="card-reveal">
+                            <span class="card-title">eduCATe - IC Hack 19<i class="material-icons right">close</i></span>
+                            <p>
+                                Inspired by the confusing number of tasks and assignments we were face during our time at school and university, decided to create an aid to help schedule time to complete those tasks, keep reminders on upcoming assessments, as well as serve as a platform
+                                to discuss those assignments.
+                            </p>
+                            <p>
+                                Messaging would work in threads, similar to the structure built into Slack, and would allow messages to contain text content or for a file to be uploaded and sent. Each assignment and/or module would contain its own channel for sake of organising chats
+                                and streamlining the process of effectively spreading and receiving information relating to a certain assignment. This would be more effective than questions being lost in random conversation of large, generic group chats.
+                            </p>
+                            <p>
+                                I was familiar with Android Studio, and so built the user-facing UI and also handled the parsing of data from JSON to usable data, that would be sent to and recieved from the server.
+                            </p>
+                            <p>
+                                The server was able to store users and link them to certain channels, threads and messages. It also handled creation and authentication of users.
+                            </p>
+                            <p>
+                                Unfortunately, despite both front and back-end having working data-parsing functionality, the app was unable to connect to the endpoint given the methods we had tried in the time constraints.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -178,13 +212,43 @@
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
-                                <span class="card-title">ARM Group Project</span>
-                                <p>An implementation of an emulator and assembler for the ARMv6 instruction set written in C.</p>
-                                <p>Also included an extension of Connect Four displayed on an LED-matrix with a Monte Carlo Tree Search algorithm for the "Computer's" move.</p>
+                                <div class="row">
+                                    <div class="col s8">
+                                        <span class="card-title">ARM Group Project</span>
+                                    </div>
+                                    <div class="col s4 right-align">
+                                        <span class="btn-floating activator btn-large waves-effect orange darken-2"><i
+                                                class="material-icons">add</i></span>
+                                    </div>
+                                </div>
+
+                                <ul>
+                                    <li>An implementation of an emulator and assembler for the ARMv6 instruction set written in C, running on a Raspberry Pi.</li>
+                                    <li>Additionally had an extension of Connect Four, displaying the game on a hand-made LED-matrix controller by the GPIO pins.</li>
+                                    <li>Furthermore, I implemented a Monte Carlo Tree Search algorithm for the "Computer's" decision logic in the game.</li>
+                                </ul>
+                                <p>Unfortunately, by request of the university for plaigarism purposes, the repository cannot be public. If you are interested in viewing the repository, please don't hesitate to contact me!</p>
                             </div>
-                            <div class="card-action">
-                                <a href="#">CLICK Link pls</a>
-                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title">ARM Group Project<i class="material-icons right">close</i></span>
+                            <p>
+                                Given a Raspberry-Pi which was based off of the same ARM architecture, we were first tasked as a group of 4 to create an emulator that could execute the instructions given in the format of a binary file which covered the whole range of processing, data-transferring,
+                                and branching instructions. The program utilised a multi-stage pipeline operating on an anonymous union of structs (representing the current instruction). Thus the instructions had to be initially parsed, and then executed
+                                according to flags and register shifts.
+                            </p>
+                            <p>
+                                The assembler used a similar format to represent each instruction and operated using a multi-pass method as to be able to calculate memory locations. The hardest task was being able to parse the given strings of assembly instructions and tokenise them,
+                                in order to parse them correctly to the correct binary representation (making sure to also set the correct flags and register calculations).
+                            </p>
+                            <p>
+                                For the extension we quickly created a simple game of Connect-Four. We then added in functionality to display the game on a custom PCB and hand-made LED-matrix. I also decided to implement a "Computer" to play against, and decided to use the Monte Carlo
+                                Search Tree algorithm in order to traverse the current decision space for each move the computer made. Once implemented, even at just 10,000 iterations, it remained unbeatable.
+                            </p>
+                            <p>
+                                All of the tasks ran on the Raspberry-Pi and so we made sure to optimise for speed and heavily reduce memory usage. With manual data-allocation and freeing, we were able to reduce our memory usage significantly, as well as by making use of data structures
+                                such as anonymised unions rather than having several unused struct members.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -194,13 +258,43 @@
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
-                                <span class="card-title">ARM Group Project</span>
-                                <p>An implementation of an emulator and assembler for the ARMv6 instruction set written in C.</p>
-                                <p>Also included an extension of Connect Four displayed on an LED-matrix with a Monte Carlo Tree Search algorithm for the "Computer's" move.</p>
+                                <div class="row">
+                                    <div class="col s8">
+                                        <span class="card-title">ARM Group Project</span>
+                                    </div>
+                                    <div class="col s4 right-align">
+                                        <span class="btn-floating activator btn-large waves-effect orange darken-2"><i
+                                                class="material-icons">add</i></span>
+                                    </div>
+                                </div>
+
+                                <ul>
+                                    <li>An implementation of an emulator and assembler for the ARMv6 instruction set written in C, running on a Raspberry Pi.</li>
+                                    <li>Additionally had an extension of Connect Four, displaying the game on a hand-made LED-matrix controller by the GPIO pins.</li>
+                                    <li>Furthermore, I implemented a Monte Carlo Tree Search algorithm for the "Computer's" decision logic in the game.</li>
+                                </ul>
+                                <p>Unfortunately, by request of the university for plaigarism purposes, the repository cannot be public. If you are interested in viewing the repository, please don't hesitate to contact me!</p>
                             </div>
-                            <div class="card-action">
-                                <a href="#">CLICK Link pls</a>
-                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title">ARM Group Project<i class="material-icons right">close</i></span>
+                            <p>
+                                Given a Raspberry-Pi which was based off of the same ARM architecture, we were first tasked as a group of 4 to create an emulator that could execute the instructions given in the format of a binary file which covered the whole range of processing, data-transferring,
+                                and branching instructions. The program utilised a multi-stage pipeline operating on an anonymous union of structs (representing the current instruction). Thus the instructions had to be initially parsed, and then executed
+                                according to flags and register shifts.
+                            </p>
+                            <p>
+                                The assembler used a similar format to represent each instruction and operated using a multi-pass method as to be able to calculate memory locations. The hardest task was being able to parse the given strings of assembly instructions and tokenise them,
+                                in order to parse them correctly to the correct binary representation (making sure to also set the correct flags and register calculations).
+                            </p>
+                            <p>
+                                For the extension we quickly created a simple game of Connect-Four. We then added in functionality to display the game on a custom PCB and hand-made LED-matrix. I also decided to implement a "Computer" to play against, and decided to use the Monte Carlo
+                                Search Tree algorithm in order to traverse the current decision space for each move the computer made. Once implemented, even at just 10,000 iterations, it remained unbeatable.
+                            </p>
+                            <p>
+                                All of the tasks ran on the Raspberry-Pi and so we made sure to optimise for speed and heavily reduce memory usage. With manual data-allocation and freeing, we were able to reduce our memory usage significantly, as well as by making use of data structures
+                                such as anonymised unions rather than having several unused struct members.
+                            </p>
                         </div>
                     </div>
                 </div>
