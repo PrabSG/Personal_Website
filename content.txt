@@ -62,3 +62,9 @@ My role involved the general running of the camp each day, as well as delivering
 -Python - taught fundamentals of programming complimented by using a varierty of libraries and hardware: used a  BBC micro:bit, PyGame Zero, mcpi (Minecraft: Pi Edition Python API).
 -Java - taught the concepts of classes, objects, methods and inheritance; this was more practically visualised and implemented by creating games with Greenfoot.
 -Electronics - Emulated a Raspberry Pi on a laptop, and utilised an Arduino(Pro Micro) and its I/O pins to simulate the GPIO pins. Created a variety of circuits on breadboards that interfaced with Python and some third-party libraries.
+
+Kip McGrath
+-January 2017 - March 2018
+Alongside my A-Level studies, I tutored in Mathematics and English from a 7 year-old level to A-Level Mathematics and GCSE English.
+Each student was at a different skill-level, thus requiring me to personalise the curriculum to each student's ability and weaknesses. Additionally, I had to report and give feedback to parents and lead teachers, providing effective and actionable advice for the child to improve.
+In addition to the teaching, I also had the responsibility to set the lesson plans, mark past work and assessments, and handle sensitive information on each child with confidentiality.
