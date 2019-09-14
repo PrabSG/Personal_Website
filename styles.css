@@ -33,6 +33,14 @@ h2 {
     height: 20vw;
 }
 
+.card {}
+
+#projects .card-image {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
 .card-content ul li {
     list-style-type: disc;
 }

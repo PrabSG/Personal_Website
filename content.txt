@@ -28,3 +28,28 @@ Messaging would work in threads, similar to the structure built into Slack, and 
 I was familiar with Android Studio, and so built the user-facing UI and also handled the parsing of data from JSON to usable data, that would be sent to and recieved from the server.
 The server was able to store users and link them to certain channels, threads and messages. It also handled creation and authentication of users.
 Unfortunately, despite both front and back-end having working data-parsing functionality, the app was unable to connect to the endpoint given the methods we had tried in the time constraints.
+
+VitaTrak - Android Health Tracker
+Created an Android application to track and visulaise a user's data on a variety of health-related metrics.
+I used Android Studio for the implementation after an initial design and research phase, and analysis of the different platforms available. Then proceeded to work with an agile model, with a focus group of clients I liased with at regular intervals during the project.
+Used Java and SQLite for the main infrastructure and back-end design of the application. Self-taught myself the necessary languages and libraries.
+If you would like to see the project's stages and corresponding docuemnts, see the link below:
+--Reveal--
+Project developed as part of my Computer Science A-Level, during which I had learnt to work with Python. With my idea for the project I decided to take it upon myself to learn a new language to work with as researching graphical interfaces with Python yielded not many simple solutions to migrate to a mobile platform.
+Thus after market research and analysis of implementation options, I had three main possibilities: iOS application using Swift, Android application using Java, a web-based application. Due to unfamiliarity with web-based platforms at the time, and no permanent developer access to an Apple &trade; device, I decided to use Android Studio and learn how to develop with Java. Additionally, it gave me the opportunity to work with a more traditional object-orientated programming language.
+I made extensive use of the Android documentation and some third-party libraries for tasks such as visualising graphs. Furthermore, I self-taught myself the structure and concepts of databases, including how to create, manage and query a database stored on-device on Android with SQLite.
+Once the project was complete, I wrote an extensive documentation docuemnt on each section of the code, detailing the function of each class, method, or code snippets. Lastly, I wrote an evaluation report outlining constructive criticism of my own work, shortcomings and possible improvements and future features.
+
+Extended Project Qualification
+An Explanation of Machine Learning through Neural Networks and the possibilities and limitations of its implementation
+This is an independent research project that I undertook during my A-Level studies.
+Being completely new to the concepts of AI as a whole, I researched and gathered information on a few branches that particularly interested me, and reported my findings and understandings in a report.
+As well as a report, I had to present my findings to the public and project supervisors, showing off demonstrations using the MNIST dataset, as well as a Recurrent Neural Network training off of the works of William Shakespeare.
+If you would like to see the final document, see the link below:
+--Reveal--
+After being introduced to the concept of Machine Learning and biologically-influenced computational techniques, I immediately took an interest into the topic and formalised it through this project.
+I conducted some initial research by watching lectures from university courses such as MIT, as well as conferences displaying bleeding edge technology such as Google Cloud. With a basic understanding and equipped with the sorts of concepts and fundamentals that exist, I then began formally researching them through videos, news stories, as well as projects and implementations of the technology.
+Neural Networks took a particular interest to me during my research. I learnt their fundamentals and mathematical operations (activation and loss functions), as well as the processes when dealing with a whole network such as backpropagation during training. While looking at newly introduced technologies, I also learnt about a variety of the issues that are faced when implementing Neural Networks - overfitting, class-variability, vanishing gradient.
+Taking the understanding I had accumulated, I started to look at some practical work, building a simple classifier with the MNIST data set, as well as looking at how more complex solutions were structured and developed.
+One of the most interesting demonstrations I looked at was a 3-layer Recurrent Neural Network, that was being fed the plays of William Shakespeare. And then once trained, it was able to generate new scripts for any given length. It was able to not only correctly format for a script with stage directions, but also generate new character names with the correct capitalisations and emphasis. When I displayed this running in real time at my presentation, it struck people with a real glimpse into what the technology is possible of.
+
