@@ -62,7 +62,7 @@
     <!-- parallax -->
     <div id="parallax-header" class="parallax-container" style="height: 18vw">
         <div class="parallax">
-            <img src="images/bg-pattern.jpg" alt="" class="responsive-img">
+            <img src="images/bg-pattern.jpg" class="responsive-img">
         </div>
     </div>
 
@@ -100,7 +100,7 @@
     <!-- parallax -->
     <div class="parallax-container">
         <div class="parallax">
-            <img src="images/bg-pattern.jpg" alt="" class="responsive-img">
+            <img src="images/bg-pattern.jpg" class="responsive-img">
         </div>
     </div>
 
@@ -111,9 +111,8 @@
             <p>The following are some of the recent projects I have worked on in relative detail, as well as links to other resources:</p>
             <div class="row">
                 <div class="col s12">
-                    <div class="card horizontal">
-                        <div class="card-image"><img src="images/bg-nebula.jpg">
-                        </div>
+                    <div id="arm-card" class="card horizontal">
+                        <div id="arm-image" class="card-image"></div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <div class="row">
@@ -156,9 +155,8 @@
                     </div>
                 </div>
                 <div class="col s12">
-                    <div class="card horizontal">
-                        <div class="card-image"><img src="images/bg-nebula.jpg">
-                        </div>
+                    <div id="ichack-card" class="card horizontal">
+                        <div id="ichack-image" class="card-image"></div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <div class="row">
@@ -206,9 +204,8 @@
                     </div>
                 </div>
                 <div class="col s12">
-                    <div class="card horizontal">
-                        <div class="card-image"><img src="images/bg-nebula.jpg">
-                        </div>
+                    <div id="vitatrak-card" class="card horizontal">
+                        <div id="vitatrak-image" class="card-image"></div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <div class="row">
@@ -229,12 +226,12 @@
                                 <p>If you would like to see the project's stages and corresponding docuemnts, see the link below:</p>
                             </div>
                             <div class="card-action">
-                                <a href="https://www.dropbox.com/sh/7l0ru6ipma2u2s3/AAALBZJeKGXC7hWHz0oxnKLqa?dl=0" target="_blank">Project Documents &ensp;<i
-                                        class="fab fa-dropbox"></i></a>
+                                <a href="https://www.dropbox.com/sh/7l0ru6ipma2u2s3/AAALBZJeKGXC7hWHz0oxnKLqa?dl=0" target="_blank">Project Documents &ensp;<i class="fab fa-dropbox"></i></a>
                             </div>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title">VitaTrak - Andorid Health Tracker<i class="material-icons right">close</i></span>
+                            <span class="card-title">VitaTrak - Andorid Health Tracker<i
+                                    class="material-icons right">close</i></span>
                             <p>
                                 Project developed as part of my Computer Science A-Level, during which I had lea rnt to work with Python. With my idea for the project I decided to take it upon myself to learn a new language to work with as researching graphical interfaces with Python
                                 yielded not many simple solutions to migrate to a mobile platform.
@@ -256,9 +253,7 @@
                     </div>
                 </div>
                 <div class="col s12">
-                    <div class="card horizontal">
-                        <div class="card-image"><img src="images/bg-nebula.jpg">
-                        </div>
+                    <div id="epq-card" class="card horizontal">
                         <div class="card-stacked">
                             <div class="card-content">
                                 <div class="row">
@@ -270,19 +265,28 @@
                                                 class="material-icons">add</i></span>
                                     </div>
                                 </div>
-                                <h4>An Explanation of Machine Learning through Neural Networks and the possibilities and limitations of its implementation</h4>
+                                <span>Titled: </span>
+                                <span style="font-style: italic">"An Explanation of Machine Learning through Neural
+                                    Networks and the possibilities and limitations of its implementation"</span>
                                 <ul>
-                                    <li>This is an independent research project that I undertook during my A-Level studies.</li>
+                                    <li>This was an independent research project that I undertook during my A-Level studies.
+                                    </li>
                                     <li>Being completely new to the concepts of AI as a whole, I researched and gathered information on a few branches that particularly interested me, and reported my findings and understandings in a report.</li>
                                     <li>As well as a report, I had to present my findings to the public and project supervisors, showing off demonstrations using the MNIST dataset, as well as a Recurrent Neural Network training off of the works of William
-                                        Shakespeare.</li>
+                                        Shakespeare.
+                                    </li>
                                 </ul>
                                 <p>If you would like to see the final document, see the link below:</p>
                             </div>
+                            <div class="card-action">
+                                <a href="https://www.dropbox.com/s/qdhxi04dimjjvim/Extended%20Project%20Qualification.pdf?dl=0" target="_blank">EPQ Report &ensp;<i class="fab fa-dropbox"></i></a>
+                            </div>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title">Extended Project Qualification<i class="material-icons right">close</i></span>
-                            <h4>An Explanation of Machine Learning through Neural Networks and the possibilities and limitations of its implementation</h4>
+                            <span class="card-title">Extended Project Qualification<i
+                                    class="material-icons right">close</i></span>
+                            <span style="font-style: italic">An Explanation of Machine Learning through Neural Networks
+                                and the possibilities and limitations of its implementation</span>
                             <p>
                                 After being introduced to the concept of Machine Learning and biologically-influenced computational techniques, I immediately took an interest into the topic and formalised it through this project.
                             </p>
@@ -313,7 +317,7 @@
     <!-- parallax -->
     <div class="parallax-container">
         <div class="parallax">
-            <img src="images/bg-pattern.jpg" alt="" class="responsive-img">
+            <img src="images/bg-pattern.jpg" class="responsive-img">
         </div>
     </div>
 
@@ -321,22 +325,34 @@
     <div class="z-depth-3">
         <section id="experience" class="section container scrollspy">
             <h2>Experience</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vel aut tempore voluptatem temporibus voluptates, quaerat neque a? Dolorum impedit est reiciendis.</p>
             <div class="row" style="padding-top:4vw">
                 <div class="col s12 l4">
                     <img src="images/bg-nebula.jpg" alt="" class="responsive-img materialboxed">
                 </div>
                 <div class="col s12 l7 offset-l1">
                     <h3>Fire Tech</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, illo ad nostrum deserunt facere impedit eveniet ratione quas ut nulla debitis.</p>
+                        <span style="font-style: italic">Summer 2019</span>
+                        <p>
+                            At Fire Tech, I was one of a handful of tutors running a summer courses in Cambridge with a focus on technology and coding. Together we managed around 25-40 children each week, ageing from 8-17 years old.
+                        </p>
+                        <p>
+                            My role involved the general running of the camp each day, as well as delivering and preparing course content to groups of size from 3-16.
+                        </p>
+                        <p>The courses I taught included:</p>
+                        <ul>
+                            <li style="list-style-type: disc"><strong>Python</strong> - taught fundamentals of programming, complimented by using a varierty of libraries and hardware: used a BBC micro:bit, PyGame Zero, mcpi (Minecraft: Pi Edition Python API).</li>
+                            <li style="list-style-type: disc"><strong>Java</strong> - introduced the concepts of classes, objects, methods and inheritance; this was more practically visualised and implemented by creating games with Greenfoot.</li>
+                            <li style="list-style-type: disc"><strong>Electronics</strong> - Emulated a Raspberry Pi on a laptop, and utilised an Arduino(Pro Micro) and its I/O pins to simulate the GPIO pins. Created a variety of circuits on breadboards that interfaced with Python and
+                                some third-party libraries.
+                            </li>
+                        </ul>
                 </div>
             </div>
             <div class="row">
-                <div class="col s12 l4 push-l7 offset-l1">
-                    <img src="images/bg-nebula.jpg" alt="" class="responsive-img materialboxed">
-                </div>
-                <div class="col s12 l7 pull-l5">
+                <div class="col s12">
                     <h3>Kip McGrath</h2>
+                        <span style="font-style: italic">January 2017 - March 2018</span>
+
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, illo ad nostrum deserunt facere impedit eveniet ratione quas ut nulla debitis.</p>
                 </div>
             </div>
@@ -416,6 +432,22 @@
                 }, 1000);
                 e.preventDefault();
             });
+            $(window).resize();
+        });
+
+        var horiz_cards = ['#arm-card', '#ichack-card', '#vitatrak-card', '#epq-card']
+        $(window).resize(function() {
+            var width = $(window).width();
+            if (width <= 650) {
+                horiz_cards.forEach(function(elem_card) {
+                    $(elem_card).removeClass('horizontal');
+                });
+
+            } else {
+                horiz_cards.forEach(function(elem_card) {
+                    $(elem_card).addClass('horizontal');
+                });
+            }
         });
     </script>
 </body>

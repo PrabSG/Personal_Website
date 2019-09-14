@@ -42,7 +42,7 @@ Once the project was complete, I wrote an extensive documentation docuemnt on ea
 
 Extended Project Qualification
 An Explanation of Machine Learning through Neural Networks and the possibilities and limitations of its implementation
-This is an independent research project that I undertook during my A-Level studies.
+This was an independent research project that I undertook during my A-Level studies.
 Being completely new to the concepts of AI as a whole, I researched and gathered information on a few branches that particularly interested me, and reported my findings and understandings in a report.
 As well as a report, I had to present my findings to the public and project supervisors, showing off demonstrations using the MNIST dataset, as well as a Recurrent Neural Network training off of the works of William Shakespeare.
 If you would like to see the final document, see the link below:
@@ -53,3 +53,12 @@ Neural Networks took a particular interest to me during my research. I learnt th
 Taking the understanding I had accumulated, I started to look at some practical work, building a simple classifier with the MNIST data set, as well as looking at how more complex solutions were structured and developed.
 One of the most interesting demonstrations I looked at was a 3-layer Recurrent Neural Network, that was being fed the plays of William Shakespeare. And then once trained, it was able to generate new scripts for any given length. It was able to not only correctly format for a script with stage directions, but also generate new character names with the correct capitalisations and emphasis. When I displayed this running in real time at my presentation, it struck people with a real glimpse into what the technology is possible of.
 
+
+Experience
+Fire Tech
+-Summer 2019
+At Fire Tech, I was one of a handful of tutors running a summer courses in Cambridge with a focus on technology and coding. Together we managed around 25-40 children each week, ageing from 8-17 years old.
+My role involved the general running of the camp each day, as well as delivering and preparing course content to groups of size from 3-16. The courses I taught included:
+-Python - taught fundamentals of programming complimented by using a varierty of libraries and hardware: used a  BBC micro:bit, PyGame Zero, mcpi (Minecraft: Pi Edition Python API).
+-Java - taught the concepts of classes, objects, methods and inheritance; this was more practically visualised and implemented by creating games with Greenfoot.
+-Electronics - Emulated a Raspberry Pi on a laptop, and utilised an Arduino(Pro Micro) and its I/O pins to simulate the GPIO pins. Created a variety of circuits on breadboards that interfaced with Python and some third-party libraries.

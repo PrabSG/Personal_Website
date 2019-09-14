@@ -33,7 +33,29 @@ h2 {
     height: 20vw;
 }
 
-.card {}
+.card-flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 300px;
+}
+
+#arm-image {
+    background-image: url(images/bg-nebula.jpg);
+}
+
+#ichack-image {
+    background-image: url(images/bg-nebula.jpg)
+}
+
+#vitatrak-image {
+    background-image: url(images/bg-nebula.jpg)
+}
 
 #projects .card-image {
     object-fit: cover;
