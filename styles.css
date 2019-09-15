@@ -40,29 +40,44 @@ h2 {
 }
 
 .card-image {
-    background-position: center;
     background-repeat: no-repeat;
     min-width: 300px;
 }
 
 #arm-image {
-    background-image: url(images/bg-nebula.jpg);
+    background-image: url(images/arm.png);
+    background-position: center;
 }
 
 #ichack-image {
-    background-image: url(images/bg-nebula.jpg)
+    background-image: url(images/educate.png);
+    background-position: top;
 }
 
 #vitatrak-image {
-    background-image: url(images/bg-nebula.jpg)
+    background-image: url(images/vitatrak.png)
 }
 
 #projects .card-image {
     object-fit: cover;
-    object-position: center;
+    object-position: bottom;
     overflow: hidden;
 }
 
 .card-content ul li {
     list-style-type: disc;
+}
+
+#firetech-image {
+    margin-top: 7vh;
+}
+
+@media only screen and (max-width: 992px) {
+    #firetech-image {
+        margin-top: 1vh;
+    }
+}
+
+#ysj-images {
+    margin-top: 2vh;
 }
