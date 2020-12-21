@@ -78,6 +78,10 @@ h2 {
     list-style-type: disc;
 }
 
+.card-content ul {
+    padding: 0 16px;
+}
+
 #firetech-image {
     margin-top: 7vh;
 }

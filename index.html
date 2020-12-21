@@ -70,11 +70,11 @@
     <div class="z-depth-3">
         <section id="about" class="section container scrollspy">
             <h2>Hi, I'm Prab!</h2>
-            <p>I'm an aspiring software engineer and a second year Computing student at Imperial College London.
+            <p>I'm an aspiring software engineer and a third year Computing student at Imperial College London.
             </p>
-            <p>I have a strong interest into Machine Learning and Distributed Systems, with a focus on back-end development. My main languages are Java and Python. As part of studies and interest, I have also experimented with C, Haskell and Kotlin.</p>
+            <p>I have a strong interest into Machine Learning and Distributed Systems, with a focus on back-end development. My main languages are Java and Python. As part of studies and interest, I have also experimented with C, C++, Haskell and Kotlin.</p>
             <p>This personal website outlines some of my past and on-going projects and experiences over the last few years. My CV is linked below, but you can find more details on my work lower down.</p>
-            <p>Feel free to get in touch with me via Email, or send me a message on LinkedIn!</p>
+            <p>Feel free to get in touch with me via email, or send me a message on LinkedIn!</p>
             <p>Here are some helpful links:</p>
             <div id="btn-links" class="row">
                 <div class="col s12 m6 l3 center-align">
@@ -110,6 +110,77 @@
             <h2>Projects</h2>
             <p>The following are some of the recent projects I have worked on in relative detail, as well as links to other resources:</p>
             <div class="row">
+
+                <div class="col s12">
+                    <div id="coffee-chats" class="card horizontal scrollspy">
+                        <div class="card-stacked">
+                            <div class="card-content ">
+                                <div class="row">
+                                    <div class="col s8">
+                                        <span class="card-title">Coffee Chats - Google STEP Project</span>
+                                    </div>
+                                    <div class="col s4 right-align">
+                                        <span class="btn-floating activator btn-large waves-effect orange darken-2"><i
+                                                class="material-icons">add</i></span>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        A platform to help facilitate random social interactions with colleagues and peers, that is especially lacking in a remote working environment.
+                                    </li>
+                                    <li>
+                                        Matches and automatically schedules people with similar interests (or completely randomly) for a chance to chat and get to know someone they otherwise may not have met.
+                                    </li>
+                                    <li>
+                                        Manages clashes and calendar conflicts from all participants to schedule to a time that works for everyone.
+                                    </li>
+                                    <li>
+                                        Built with a React frontend in TypeScript, with a Java servlet-based backend deployed using Google App Engine, enabling easy authentication via OAuth 2.0 and storage using a NoSQL Datastore.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://github.com/googleinterns/step250-2020" target="_blank">Github repository &ensp;<i
+                                    class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title">Coffee Chats - Google STEP Project<i class="material-icons right">close</i></span>
+                            <p>
+                                During my STEP Internship at Google, I was given 6 weeks to design, plan and develop an open-source project, fulfilling some basic requirements of being a web-based application, using some Google APIs, and something that aligned with one of Google's core
+                                values or OKRs.
+                            </p>
+                            <p>
+                                Because of the remote-working situation we were currently in, I came up with the idea of creating a platform to be able to meet people 'randomly' like people otherwise would do around the office and in the canteens. There was a very basic system in-place
+                                for interns to meet with each other, but it was completely random and had no customisability or responsiveness, all being managed through some initial frequency preferences in a Google form. The idea was to expand this
+                                functionality to a web page which would allow you to submit 'chat requests' with some parameters such as: dates and times, topics and interests, length of time, group size and the ability to add more!
+                            </p>
+                            <p>
+                                For this project I was working in a pair with another intern, so I set up and lead our daily standups to keep each other informed of progress and possible issues we were facing. Not being in person meant that these meetings became critical for our communication
+                                and coordination to complete the project. We also kept in touch with our hosts who served as secondary reviewers for our pull requests and helped to answer any questions we had.
+                            </p>
+                            <p>
+                                We decided on React as a framework for the frontend due to its versatility and the speed at which we could develop new features within the time-constrained project. TypeScript felt like a sensible choice due to the added level of type safety we got while
+                                developing, which helped to diagnose bugs and issues quicker, especially when there isn't a continuous feedback loop of what interfaces were being used by each other while we were integrating our features with each other's
+                                work. Before the project, I had worked on a small portfolio project to familiarise myself with using Google Cloud Platform and how to deploy applications using Google App Engine, so it made sense to use something similar
+                                on the backend, Java was also fairly effective and helping us to keep interactions modular and simple to comprehend.
+                            </p>
+                            <p>
+                                For the project, I worked on the full-stack of the platform, integrating frontend and backend for features that I was responsible for. I worked on the core functionality of the project, namely the submission of chat requests by users, and the matching
+                                and scheduling of requests. The chat requests required some additional functionality than that of a simple HTML form, such as autocomplete for interest-tags (based off of user-generated tags), intuitive date-time selection
+                                (taking into account timezones), as well as providing a simple and more responsive interface for users to use over a simple form. In addition, I also set up the authentication of users to ensure that requests were attached
+                                to the correct users, and that users were signed in. This was done via integration with Google's OAuth 2.0 servers that deploying with Google App Engine allowed us to interface with.
+                            </p>
+                            <p>
+                                Some of the main complexity of this project was implementing a matching algorithm efficiently, that was run periodically, and was suitable for a scale of ~200,000 users. Some of the key motivations of the project was the ability for users to customise
+                                additional parameters such as group sizes and availability, so this created a more algorithmically complex problem than just a simple bipartite matching algorithm. In fact, matching algorithms in general graphs is already
+                                a complex algorithmic problem, however the added complexity of variable group sizes would likely cause any 'ideal' matching strategy to become NP-hard. After much research into algorithms such as Edmond's 'Blossom' algorithm,
+                                I opted to implement an iterative approach which ranked the importance of parameters, performing pre-processing and calculations where possible to reduce time complexity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col s12">
                     <div id="arm-card" class="card horizontal">
                         <div id="arm-image" class="card-image"></div>
@@ -332,6 +403,43 @@
     <div class="z-depth-3">
         <section id="experience" class="section container scrollspy">
             <h2>Experience</h2>
+            <div class="row">
+                <div class="col s12 l7">
+                    <div>
+                        <h3>Google - STEP Intern</h3>
+                        <span style="font-style: italic">Summer 2020</span>
+                        <p>
+                            During the Summer of 2020, I was a STEP Intern at Google attached to an SRE team based in Dublin. I spent my time between trainings and software engineering projects, all while gaining exposure to the working environment of being a developer within a
+                            large technology company.
+                        </p>
+                        <p>
+                            I spent the majority of my time on an 6-week open-source software engineering project alongside a partner, whilst adhering to the strict testng and code cleanliness methodologies enforced by our hosts and each other during code reviews.
+                        </p>
+                        <p>
+                            The project was self-lead and involved designing the platform from the ground up including writing and continuously updating a central design document to outline design decisions and system architecture. This also provided a 'single source of truth' for
+                            the platform to be built from so that development would stay in-line with the designs we had planned. It also provided an opportunity to discuss and review design suggestions and ideas before their implementation so that decisions
+                            could be well-informed and take on the insight from a variety of perspectives.
+                        </p>
+                        <p>
+                            I was able to learn a great deal working within a larger team of engineers, attending team meetings and daily standups, as well as coordinating progress with my peers. This is especially true when it came to actual development techniques and best practices
+                            that I have been able to take with me onto future work and projects I have been working on at university since: design and discussion continuously during and before development, writing code to a high-quality standard for seamless
+                            integration of features with other people's work (making use of testing and CI), as well as reviewing code on a regular basis to ensure knowledge is shared on the inner workings of features amongst the team.
+                        </p>
+                        <p>
+                            The experience I was able to gain during my internship was truly valuable and has better prepared me for my future as an engineer in the real world.
+                        </p>
+                    </div>
+                </div>
+                <div id="google-step-image" class="col s8 offset-s2 l4">
+                    <img src="images/google_step.jpeg" class="responsive-img materialboxed">
+                    <br />
+                    <div class="center-align">
+                        <a href="#coffee-chats" class="waves-effect waves-light btn-large orange darken-2 scroll-btn">
+                            Link to Project
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col s12 l7 push-l5">
                     <div>
