@@ -70,7 +70,7 @@
     <div class="z-depth-3">
         <section id="about" class="section container scrollspy">
             <h2>Hi, I'm Prab!</h2>
-            <p>I'm an aspiring software engineer and a third year Computing student at Imperial College London.
+            <p>I'm an aspiring software engineer and a fourth year Computing student at Imperial College London.
             </p>
             <p>I have a strong interest into Machine Learning and Distributed Systems, with a focus on back-end development. My main languages are Java and Python. As part of studies and interest, I have also experimented with C, C++, Haskell and Kotlin.</p>
             <p>This personal website outlines some of my past and on-going projects and experiences over the last few years. My CV is linked below, but you can find more details on my work lower down.</p>
@@ -110,6 +110,64 @@
             <h2>Projects</h2>
             <p>The following are some of the recent projects I have worked on in relative detail, as well as links to other resources:</p>
             <div class="row">
+
+                <div class="col s12">
+                    <div id="matterialize-card" class="card horizontal">
+                        <div id="matterialize-image" class="card-image"></div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <div class="row">
+                                    <div class="col s8">
+                                        <span class="card-title">Matterialize</span>
+                                    </div>
+                                    <div class="col s4 right-align">
+                                        <span class="btn-floating activator btn-large waves-effect orange darken-2"><i
+                                            class="material-icons">add</i></span>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        A background removal application and platform for developing new matting techniques on Linux.
+                                    </li>
+                                    <li>
+                                        The image manipulation pipeline was written in C++, with a web-based GUI in TypeScript using React, running locally using Electron.
+                                    </li>
+                                    <li>
+                                        We implemented multiple background removal strategies including using cutting edge research papers such as 'Background Cut'.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Please take a look at the repository below on GitHub, as well as the detailed report produced over the course of the project which includes: platform choice, system design, implementation details and both quantitative and qualitative evaluation of the
+                                    results.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://github.com/croissant-team/matterialize" target="_blank">Github repository &ensp;<i
+                                    class="fab fa-github"></i></a>
+                                <a href="docs/Matterialize_Report.pdf" target="_blank">Report &ensp;<i
+                                    class="fas fa-file-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title">Matterialize<i class="material-icons right">close</i></span>
+                            <p>
+                                During my third year of university, we built a third-party automatic background replacement tool for video streams, agnostic of a specific streaming platform. Over the course of 8 weeks, in a group of 6, we used SCRUM engineering principles with a 2-week
+                                sprint time to build the project. This has involved researching papers and implementing some novel techniques to match the demands of live video.
+                            </p>
+                            <p>
+                                Personally I had been working on data processing to look into a machine learning approach, as well as facilitating the communication and implementing features between our image matting pipeline and a graphical user interface.
+                            </p>
+                            <p>
+                                I learnt a lot about working within a larger team throughout the project, including how to resolve conflicts and problem solve when hitting platform issues. One example of this was our choice of development language and platform was causing significant
+                                delays to implementing features and reaching our performance targets. Due to us being halfway through our timeline, there was valid pushback to us migrating to a new platform and language which would involve a complete
+                                redesign of our GUI and porting of the significant progress we had made in our background matting strategies. To resolve this, we met as a group and outlined the benefits and issues with both sticking to the current platform
+                                and with migrating to something new. Ultimately we reached a majority vote to move to the new platform, but was sure to consult with our stakeholder and project owner to get their view on our options. Ultimately the migration
+                                took significantly less time than our concerns had us believe, and it in fact yielded essential performance uplifts to the matting pipeline. Additionally, the new GUI could be built in a much-more extensible and modern
+                                format.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col s12">
                     <div id="coffee-chats" class="card horizontal scrollspy">
@@ -232,6 +290,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col s12">
                     <div id="ichack-card" class="card horizontal">
                         <div id="ichack-image" class="card-image"></div>

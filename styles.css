@@ -54,6 +54,12 @@ h2 {
     min-width: 300px;
 }
 
+#matterialize-image {
+    background-image: url(images/matterialize.png);
+    background-position: center;
+    background-size: cover;
+}
+
 #arm-image {
     background-image: url(images/arm.png);
     background-position: center;
